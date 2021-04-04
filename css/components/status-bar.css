@@ -1,0 +1,28 @@
+.status-bar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  /*패딩을 주면 박스+패딩값까지 늘어나는 것을 막기위해 content사이즈가 늘어나는것을 방지*/
+}
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child {
+  margin-right: 7px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column .fa-battery-quarter {
+  margin: 0px 5px;
+}
